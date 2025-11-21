@@ -23,7 +23,7 @@ export default function Hero() {
         </Intro>
       </Content>
 
-      <ProfileImg src="/profile.jpg" alt="Profile portrait" />
+      <ProfileImg src="/profile.png" alt="Profile portrait" />
     </Container>
   );
 }
