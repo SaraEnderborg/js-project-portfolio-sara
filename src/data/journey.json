@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "date": "September 30th",
+      "title": "Finding Joy in the Learning Curve",
+      "image": "https://source.unsplash.com/600x400/?learning",
+      "text": "Every week, something that felt impossible suddenly makes sense — and that feeling is addictive.",
+      "link": "#"
+    },
+    {
+      "date": "October 22th",
+      "title": "The Power of Learning Together",
+      "image": "https://source.unsplash.com/600x400/?gold",
+      "text": "Learning together makes the process feel lighter, faster, and more meaningful.",
+      "link": "#"
+    },
+    {
+      "date": "November 5th",
+      "title": "Sitting With Uncertainty",
+      "image": "https://source.unsplash.com/600x400/?cupcakes",
+      "text": "Growth often happens in the moments we slow down, rethink, and rebuild.",
+      "link": "#"
+    },
+    {
+      "date": "November 14th",
+      "title": "Seeing the Patterns Behind the Code",
+      "image": "https://source.unsplash.com/600x400/?sprinkles",
+      "text": "Now I see challenges aren’t about writing more code — but recognizing patterns behind it.",
+      "link": "#"
+    }
+  ]
+}

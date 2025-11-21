@@ -1,23 +1,22 @@
+import Button from "./Button";
+import { Card } from "./ProjectCard.styles";
+
 export default function ProjectCard({ title, description, image, demo, code }) {
   return (
-    <article style={{ textAlign: "left" }}>
-      <img
-        src={image}
-        alt={title}
-        style={{ width: "100%", borderRadius: "12px", marginBottom: "1rem" }}
-      />
+    <Card>
+      <img src={image} alt={title} />
 
-      <h3 style={{ marginBottom: "0.5rem" }}>{title}</h3>
-      <p style={{ marginBottom: "1rem" }}>{description}</p>
+      <h3>{title}</h3>
+      <p>{description}</p>
 
       <div style={{ display: "flex", gap: "1rem" }}>
-        <a href={demo} target="_blank" rel="noopener noreferrer">
+        <Button href={demo} variant="primary">
           Live demo
-        </a>
-        <a href={code} target="_blank" rel="noopener noreferrer">
+        </Button>
+        <Button href={code} variant="outline">
           View Code
-        </a>
+        </Button>
       </div>
-    </article>
+    </Card>
   );
 }
