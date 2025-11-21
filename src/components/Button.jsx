@@ -11,16 +11,16 @@ const StyledButton = styled.a`
   cursor: pointer;
 
   /* Variant: Primary */
-  ${({ variant, theme }) =>
-    variant === "primary" &&
+  ${({ $variant, theme }) =>
+    $variant === "primary" &&
     `
     background: ${theme.colors.primary};
     color: white;
   `}
 
   /* Variant: Outline */
-  ${({ variant, theme }) =>
-    variant === "outline" &&
+  ${({ $variant, theme }) =>
+    $variant === "outline" &&
     `
     background: transparent;
     border: 2px solid ${theme.colors.primary};
@@ -36,7 +36,7 @@ export default function Button({ href, children, variant = "primary" }) {
   return (
     <StyledButton
       href={href}
-      variant={variant}
+      $variant={variant}
       target="_blank"
       rel="noopener noreferrer"
     >

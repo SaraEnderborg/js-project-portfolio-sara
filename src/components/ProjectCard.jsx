@@ -1,5 +1,5 @@
 import Button from "./Button";
-import { Card } from "./ProjectCard.styles";
+import { Card } from "./Card.styles";
 
 export default function ProjectCard({ title, description, image, demo, code }) {
   return (
