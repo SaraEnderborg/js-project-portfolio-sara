@@ -1,5 +1,5 @@
 import journeyData from "../../data/journey.json";
-import JourneyCard from "../../components/JourneyCard";
+import Card from "../../components/Card";
 import { Section, Title, Grid } from "./Journey.styles";
 
 export default function Journey() {
@@ -9,7 +9,7 @@ export default function Journey() {
 
       <Grid>
         {journeyData.posts.map((post, index) => (
-          <JourneyCard key={index} post={post} />
+          <Card key={index} {...post} buttonText="Read Article" />
         ))}
       </Grid>
     </Section>

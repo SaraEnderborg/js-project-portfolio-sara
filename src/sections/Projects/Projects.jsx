@@ -1,4 +1,4 @@
-import ProjectCard from "../../components/ProjectCard";
+import Card from "../../components/Card";
 import projectsData from "../../data/projects.json";
 import { Section, Title, Grid } from "./Projects.styles";
 
@@ -9,7 +9,7 @@ export default function Projects() {
 
       <Grid>
         {projectsData.projects.map((project, index) => (
-          <ProjectCard
+          <Card
             key={index}
             title={project.name}
             description={project.description || "No description available yet"}
