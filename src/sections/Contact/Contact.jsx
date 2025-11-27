@@ -8,6 +8,8 @@ import {
   Icons,
 } from "./Contact.styles";
 
+import { Github } from "../../assets/icons/Github.jsx";
+
 export default function Contact() {
   return (
     <Section>
@@ -23,7 +25,10 @@ export default function Contact() {
           <Text>sara_enderborg@outlook.com</Text>
 
           <Icons>
-            <a href="#">in</a>
+            <a href="#">
+              <Github />
+            </a>
+
             <a href="#">🐙</a>
             <a href="#">🖌</a>
           </Icons>

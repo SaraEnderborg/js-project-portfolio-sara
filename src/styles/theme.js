@@ -1,8 +1,10 @@
 export const theme = {
   colors: {
-    primary: "#FD6F00",
+    primary: {
+      bg: "#FFFFFF",
+      text: "#FD6F00",
+    },
     text: "#202020",
-    background: "#FFFFFF",
     lightText: "#6D6D6D",
     border: "#E5E5E5",
   },
@@ -19,3 +21,5 @@ export const theme = {
     lg: "1024px",
   },
 };
+
+/* Fixa de andra färgerna ex. secondary.*/
