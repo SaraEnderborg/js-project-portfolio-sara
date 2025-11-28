@@ -2,24 +2,31 @@
   "projects": [
     {
       "name": "Photography Website",
-      "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
-      "tags": ["HTML5", "CSS3", "JavaScript"],
-      "netlify": "link",
-      "github": "link"
+      "image": "/balloons.png",
+      "description": "A responsive photography website built with CSS Grid and Flexbox, featuring a custom card layout, mobile-first design, and a desktop navigation bar.",
+      "netlify": "https://meek-entremet-8e1086.netlify.app/",
+      "github": "https://github.com/SaraEnderborg/js-project-business-site"
     },
     {
-      "name": "Weather app",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
-      "tags": ["HTML5", "CSS3", "JavaScript", "TypeScript", "APIs"],
-      "netlify": "link",
-      "github": "link"
+      "name": "Weather App — TypeScript & API Project",
+      "image": "public/weatherApp.png",
+      "description": "A responsive weather app built in a group using TypeScript and a weather API. We recreated a designer’s mockup, fetched real data, and implemented strong types and clean code practices.",
+      "netlify": "https://poodles3-weather-app.netlify.app/",
+      "github": "https://github.com/SaraEnderborg/js-project-weather-app"
     },
     {
       "name": "Recipe Library",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
-      "tags": ["HTML5", "CSS3", "JavaScript", "TypeScript", "APIs"],
-      "netlify": "link",
-      "github": "link"
+      "image": "/balloons.png",
+      "description": "A responsive recipe library interface where users can filter and sort recipes by diet, cuisine, cooking time, and ingredients. Built from a Figma design and implemented with JavaScript logic.",
+      "netlify": "https://saras-js-project-recipe-library.netlify.app/",
+      "github": "https://github.com/SaraEnderborg/js-project-recipe-library"
+    },
+    {
+      "name": "Pet Foster — Accessibility-Focused Group Project",
+      "image": "/public/Pet-foster.png",
+      "description": "An accessibility-first website built in a team project where users can explore adoptable dogs. We focused on semantic HTML, keyboard navigation, screen reader support, ARIA roles, and WCAG color contrast to create an inclusive user experience for everyone.",
+      "netlify": "https://pet-foster.netlify.app/cards.html",
+      "github": "https://github.com/KausarShangareeva/js-project-accessibility"
     }
   ]
 }
