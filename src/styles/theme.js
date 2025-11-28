@@ -1,8 +1,14 @@
 export const theme = {
+  spacing: {
+    sm: "8px",
+    md: "16px",
+    lg: "32px",
+    xl: "64px",
+  },
+
   colors: {
     text: "#202020",
     background: "#FFFFFF",
-
     primary: "#FD6F00",
 
     button: {

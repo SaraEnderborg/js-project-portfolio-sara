@@ -9,8 +9,11 @@ export default function Skills() {
 
       <Grid>
         <SkillColumn title="Code" items={skills.code} />
+
         <SkillColumn title="Toolbox" items={skills.toolbox} />
+
         <SkillColumn title="Upcoming" items={skills.upcoming} />
+
         <SkillColumn title="More" items={skills.more} />
       </Grid>
     </Section>
