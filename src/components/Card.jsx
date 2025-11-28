@@ -21,19 +21,15 @@ export default function Card({
       <p>{description || text}</p>
 
       <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-        {demo && <Button href={demo}>Live demo</Button>}
-
-        {code && (
-          <Button href={code} $variant="outline">
-            View Code
+        {demo && (
+          <Button href={demo} $variant="secondary">
+            Live demo
           </Button>
         )}
 
-        {link && (
-          <Button href={link} $variant="outline">
-            {buttonText}
-          </Button>
-        )}
+        {code && <Button href={code}>View Code</Button>}
+
+        {link && <Button href={link}>{buttonText}</Button>}
       </div>
     </StyledCard>
   );

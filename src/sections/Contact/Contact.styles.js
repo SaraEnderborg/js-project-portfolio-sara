@@ -35,13 +35,16 @@ export const Image = styled.div`
 export const Content = styled.div``;
 
 export const Title = styled.h2`
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  font-family: ${({ theme }) => theme.fonts.heading};
+  font-size: ${({ theme }) => theme.typography.h2.size};
+  line-height: ${({ theme }) => theme.typography.h2.lineHeight};
+  font-weight: ${({ theme }) => theme.typography.h2.weight};
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 export const Text = styled.p`
-  margin: 0.3rem 0;
+  font-size: ${({ theme }) => theme.typography.body.size};
+  font-weight: ${({ theme }) => theme.typography.body.weight};
+  line-height: ${({ theme }) => theme.typography.body.lineHeight};
 `;
 
 export const Icons = styled.div`
