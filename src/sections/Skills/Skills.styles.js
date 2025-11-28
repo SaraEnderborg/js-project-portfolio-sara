@@ -10,7 +10,7 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   font-family: ${({ theme }) => theme.fonts.heading};
-  font-weight: ${({ theme }) => theme.typography.h2.weight};
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.text};
   text-align: center;
 
@@ -21,40 +21,54 @@ export const Title = styled.h2`
 export const Grid = styled.div`
   width: 100%;
   max-width: 982px;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
 
-  /* Linjer mellan kolumner med CSS istället */
-  & > div:nth-child(1),
-  & > div:nth-child(2),
-  & > div:nth-child(3) {
+  /* DESKTOP — vertikala linjer */
+  & > div {
     position: relative;
   }
 
-  & > div:nth-child(1)::after,
-  & > div:nth-child(2)::after,
-  & > div:nth-child(3)::after {
+  & > div:not(:last-child)::after {
     content: "";
     position: absolute;
     right: -16px;
     top: 0;
     width: 2px;
-    height: 220px;
-    background: ${({ theme }) => theme.colors.primary};
+    height: 180px;
+    background: #fd6f00;
   }
 
+  /* TABLET & MOBILE */
   @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 56px;
 
+    /* Ta bort desktop-linjer */
     & > div::after {
       display: none;
     }
+
+    /* Lägg in Figma-style SVG-linjer--fixa sen */
+    & > div:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 160px;
+      height: 2px;
+      background: #fd6f00;
+      border-radius: 2px;
+    }
   }
 
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  @media (max-width: 480px) {
+    gap: 40px;
+
+    & > div:not(:last-child)::before {
+      width: 120px;
+    }
   }
 `;

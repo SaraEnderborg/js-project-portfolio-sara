@@ -5,7 +5,11 @@ import {
   Title,
   Intro,
   ProfileImg,
+  Socials,
 } from "./Hero.styles";
+
+import { Github } from "../../assets/icons/Github";
+import { Linkedin } from "../../assets/icons/Linkedin";
 
 export default function Hero() {
   return (
@@ -21,6 +25,23 @@ export default function Hero() {
           relations, I bring research, pattern-finding, and a people-first
           mindset into everything I build.
         </Intro>
+        <Socials>
+          <a
+            href="https://github.com/dittkonto"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Github />
+          </a>
+
+          <a
+            href="https://linkedin.com/in/dittkonto"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Linkedin />
+          </a>
+        </Socials>
       </Content>
 
       <ProfileImg src="/profile.png" alt="Profile portrait" />

@@ -10,8 +10,8 @@ const StyledButton = styled.a`
   border-radius: ${({ theme }) => theme.buttons.radius};
 
   font-family: ${({ theme }) => theme.fonts.body};
-  font-size: ${({ theme }) => theme.typography.button.size};
-  font-weight: ${({ theme }) => theme.typography.button.weight};
+  font-size: ${({ theme }) => theme.button.size};
+  font-weight: ${({ theme }) => theme.button.weight};
 
   ${({ theme, $variant }) => `
     background: ${theme.colors.button[$variant].bg};
