@@ -1,24 +1,25 @@
 import Card from "../../components/Card";
+import { Carousel } from "../../components/Carousel";
 import projectsData from "../../data/projects.json";
-import { Section, Title, Grid } from "./Projects.styles";
+import { Section, Title } from "./Projects.styles";
 
 export default function Projects() {
   return (
     <Section>
-      <Title>Projects</Title>
+      <Title>Featured Projects</Title>
 
-      <Grid>
-        {projectsData.projects.map((project, index) => (
+      <Carousel
+        data={projectsData.projects}
+        renderItem={(project) => (
           <Card
-            key={index}
             title={project.name}
-            description={project.description || "No description available yet"}
+            description={project.description || "No description yet"}
             image={project.image}
             demo={project.netlify}
             code={project.github}
           />
-        ))}
-      </Grid>
+        )}
+      />
     </Section>
   );
 }

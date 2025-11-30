@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const Card = styled.article`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 520px;
   background: white;
   padding: 1.5rem;
   border-radius: 16px;
@@ -13,8 +17,10 @@ export const Card = styled.article`
 
   img {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
     border-radius: 12px;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
   }
 
   h3 {
@@ -23,6 +29,12 @@ export const Card = styled.article`
   }
 
   p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 `;

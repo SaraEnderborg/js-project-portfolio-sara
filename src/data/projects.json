@@ -9,7 +9,7 @@
     },
     {
       "name": "Weather App — TypeScript & API Project",
-      "image": "public/weatherApp.png",
+      "image": "/balloons.png",
       "description": "A responsive weather app built in a group using TypeScript and a weather API. We recreated a designer’s mockup, fetched real data, and implemented strong types and clean code practices.",
       "netlify": "https://poodles3-weather-app.netlify.app/",
       "github": "https://github.com/SaraEnderborg/js-project-weather-app"
@@ -23,7 +23,7 @@
     },
     {
       "name": "Pet Foster — Accessibility-Focused Group Project",
-      "image": "/public/Pet-foster.png",
+      "image": "/balloons.png",
       "description": "An accessibility-first website built in a team project where users can explore adoptable dogs. We focused on semantic HTML, keyboard navigation, screen reader support, ARIA roles, and WCAG color contrast to create an inclusive user experience for everyone.",
       "netlify": "https://pet-foster.netlify.app/cards.html",
       "github": "https://github.com/KausarShangareeva/js-project-accessibility"

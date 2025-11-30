@@ -30,26 +30,26 @@ export const theme = {
   },
 
   typography: {
-    /* HERO TITLE (Frontend Developer) */
     h1: {
-      desktop: "82px",
-      tablet: "64px",
-      mobile: "42px",
+      desktop: "80px",
+      tablet: "60px",
+      mobile: "40px",
+      weight: 700,
+      lineHeight: "1",
     },
 
-    /* HERO NAME (Sara…) */
-    h3: {
-      size: "75px",
-    },
-
-    /* SKILLS TITLE */
     h2: {
-      size: "80px",
+      size: "60px",
       weight: 700,
       lineHeight: "100px",
     },
 
-    /* BODY TEXT */
+    h3: {
+      size: "20px",
+      weight: 500,
+      lineHeight: "1.4",
+    },
+
     body: {
       desktop: "18px",
       tablet: "16px",
@@ -57,15 +57,13 @@ export const theme = {
       weight: 400,
       lineHeight: "32px",
     },
+
+    button: {
+      size: "18px",
+      weight: 500,
+    },
   },
 
-  /* BUTTON TYPOGRAPHY */
-  button: {
-    size: "18px",
-    weight: 500,
-  },
-
-  /* BUTTON LAYOUT */
   buttons: {
     height: "48px",
     radius: "12px",
