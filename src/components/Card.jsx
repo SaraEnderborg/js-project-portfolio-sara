@@ -22,14 +22,34 @@ export default function Card({
 
       <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
         {demo && (
-          <Button href={demo} $variant="secondary">
+          <Button
+            href={demo}
+            variant="primary"
+            ariaLabel={`Open live demo for ${title}`}
+          >
             Live demo
           </Button>
         )}
 
-        {code && <Button href={code}>View Code</Button>}
+        {code && (
+          <Button
+            href={code}
+            variant="secondary"
+            ariaLabel={`${buttonText} about ${title}`}
+          >
+            View Code
+          </Button>
+        )}
 
-        {link && <Button href={link}>{buttonText}</Button>}
+        {link && (
+          <Button
+            href={link}
+            variant="secondary"
+            ariaLabel={`${buttonText} about ${title}`}
+          >
+            {buttonText}
+          </Button>
+        )}
       </div>
     </StyledCard>
   );

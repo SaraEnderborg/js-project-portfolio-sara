@@ -59,16 +59,17 @@ export const theme = {
     },
 
     button: {
-      size: "18px",
+      size: "16px",
       weight: 500,
+      lineHeight: "1",
     },
   },
 
   buttons: {
-    height: "48px",
-    radius: "12px",
-    paddingX: "16px",
-    gap: "16px",
+    height: "44px",
+    radius: "10px",
+    paddingX: "14px",
+    gap: "10px",
   },
 
   breakpoints: {
