@@ -9,13 +9,14 @@ import {
 } from "./Contact.styles";
 
 import { Github } from "../../assets/icons/Github.jsx";
+import { Linkedin } from "../../assets/icons/Linkedin.jsx";
 
 export default function Contact() {
   return (
     <Section>
       <Wrapper>
         <Image>
-          <img src="/profile.png" alt="Profile" />
+          <img src="/profile.png" alt="Portrait of Sara Enderborg" />
         </Image>
         <Content>
           <Title>Let's talk</Title>
@@ -25,12 +26,22 @@ export default function Contact() {
           <Text>sara_enderborg@outlook.com</Text>
 
           <Icons>
-            <a href="#">
+            <a
+              href="https://github.com/SaraEnderborg"
+              aria-label="Github profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Github />
             </a>
-
-            <a href="#">🐙</a>
-            <a href="#">🖌</a>
+            <a
+              href="https://www.linkedin.com/in/saraenderborg-dev/"
+              aria-label="LinkedIn profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin />
+            </a>
           </Icons>
         </Content>
       </Wrapper>

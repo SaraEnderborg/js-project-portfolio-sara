@@ -27,24 +27,26 @@ export default function Hero() {
         </Intro>
         <Socials>
           <a
-            href="https://github.com/dittkonto"
+            href="https://github.com/SaraEnderborg"
+            aria-label="Github profile"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
-            <Github />
+            <Github aria-hidden="true" focusable="false" />
           </a>
 
           <a
-            href="https://linkedin.com/in/dittkonto"
+            href="https://www.linkedin.com/in/saraenderborg-dev/"
+            aria-label="LinkedIn profile"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
-            <Linkedin />
+            <Linkedin aria-hidden="true" focusable="false" />
           </a>
         </Socials>
       </Content>
 
-      <ProfileImg src="/profile.png" alt="Profile portrait" />
+      <ProfileImg src="/profile.png" alt="Portrait of Sara Enderborg" />
     </Container>
   );
 }
